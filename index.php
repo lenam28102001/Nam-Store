@@ -1,6 +1,6 @@
 <?php
     session_start();
-    require_once "<web>config.php";
+    require_once "web/config.php";
     if(!isset($_SESSION['user'])){
         header("location:web/login.php");}
     $sql_pro = "SELECT * from tbl_sanpham  order by id_sanpham DESC";
