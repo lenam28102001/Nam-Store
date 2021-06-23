@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="cssweb/web.css">
 </head>
 <body>
     <h1>Shop Of Nam</h1>
