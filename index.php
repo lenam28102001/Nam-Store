@@ -1,8 +1,8 @@
 <?php
     session_start();
     require_once "web/config.php";
-    if(!isset($_SESSION['user'])){
-        header("location:web/login.php");}
+    // if(!isset($_SESSION['user'])){
+    //     header("location:web/login.php");}
     $sql_pro = "SELECT * from tbl_sanpham  order by id_sanpham DESC";
     $query_pro = pg_query($dbconn, $sql_pro);
 ?>
@@ -116,5 +116,117 @@ article .price {
     border: 2px solid #424242;
     color: #a1a1a1;
   }
+  
+body {
+    background: url(../pictures/background-dong-don-gian-ma-dep_032847889.gif);
+    background-size: cover;
+    font-size: 16px;
+    font-family: Lato, sans-serif;
+  }
+  section {
+    border: 0px;
+    text-align: center;
+  }
+  article {
+    background-color: #262626;
+    display: inline-block;
+    width: 23%;
+    margin: 80px 20px 0 20px;
+    border: 2px solid #424242;
+    color: #a1a1a1;
+  }
+  article h1 {
+    font-size: 1.5em;
+    color: hotpink;
+  }
+  article .price {
+    font-size: medium;
+    font-weight: bold;
+    color: #27dcc4;
+  }
+  article ul {
+    padding: 0;
+  }
+  article button {
+    background-color: #27dcc4;
+    color: #FFFFFF;
+    padding: 15px 30px;
+    margin: 10px 0;
+    font-size: 0.9em;
+    cursor: pointer;
+    border: none;
+  }
+  article ul li {
+    list-style-type: none;
+    padding: 5px 0;
+  }
+  article button:hover {
+    background-color: #acacac;
+  }
+h1{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: #27dcc4;
+}   
+.footer-basic {
+  padding:40px 0;
+  background-color: #262626;
+  color: whitesmoke;
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1;
+  margin-bottom:0;
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
 </style>
 </html>
